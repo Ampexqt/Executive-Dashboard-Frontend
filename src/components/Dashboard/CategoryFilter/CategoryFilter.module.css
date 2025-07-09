@@ -1,0 +1,29 @@
+.categoryFilter {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+  margin-top: -1.6rem; /* Move further upward */
+}
+
+.button {
+  background: #f9f8f4;
+  color: #232323;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+
+.active {
+  background: #232323;
+  color: #fff;
+  border: 1.5px solid #232323;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', 'Lora', sans-serif;
+    background: #fafbfc;
+  }
+
+.dashboardContainer {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: #fafbfc;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 110px;
+  min-width: 110px;
+  max-width: 110px;
+  height: 100vh;
+  background: #212736;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSideWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 0px 2.5rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gridRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2.2rem;
+  margin-top: 0;
+  align-items: flex-start;
+}
+
+.leftCol {
+  flex: 2.2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.rightCol {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-top: -8px;
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
