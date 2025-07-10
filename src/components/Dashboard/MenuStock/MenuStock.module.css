@@ -51,3 +51,21 @@
   border-radius: 3px;
   display: inline-block;
 }
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem 0.7rem 0.7rem 0.7rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .pieChart {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .legendRow {
+    font-size: 0.9rem;
+  }
+}

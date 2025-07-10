@@ -13,12 +13,16 @@ import React, { useState } from 'react';
 
 const Dashboard = () => {
   const [category, setCategory] = useState('Coffee');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const handleSidebarToggle = () => setSidebarOpen((open) => !open);
+  const handleSidebarClose = () => setSidebarOpen(false);
 
   return (
     <div className={styles.dashboardContainer}>
-      <Sidebar />
+      <Sidebar open={sidebarOpen} onClose={handleSidebarClose} />
       <div className={styles.rightSideWrapper}>
-        <Header />
+        <Header onSidebarToggle={handleSidebarToggle} />
         <div className={styles.mainContent}>
           <StatsFilter />
           <StatsCards />

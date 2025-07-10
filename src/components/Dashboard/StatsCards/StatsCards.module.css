@@ -34,3 +34,23 @@
   min-height: 2.5rem;
   letter-spacing: 1px;
 }
+
+@media (max-width: 768px) {
+  .statsCardsContainer {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .card {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 1rem 0.7rem;
+    font-size: 0.95rem;
+  }
+  .cardTitle {
+    font-size: 0.95rem;
+  }
+  .cardValue {
+    font-size: 1.3rem;
+  }
+}

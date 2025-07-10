@@ -41,3 +41,52 @@
     height: 60px; /* adjust as needed */
     font-family: intern;
   }
+
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #232323;
+    align-items: center;
+    justify-content: center;
+  }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 12px;
+    height: auto;
+    min-height: 56px;
+  }
+  .left {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  .weatherIcon {
+    font-size: 1.3rem;
+    margin-right: 8px;
+  }
+  .date, .time {
+    font-size: 1rem;
+  }
+  .user-info {
+    font-size: 0.95rem;
+    height: auto;
+    padding: 4px 0;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    z-index: 1002;
+  }
+  .header {
+    position: relative;
+    padding-left: 48px;
+  }
+}
